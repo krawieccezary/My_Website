@@ -1,6 +1,15 @@
-body, h1, h2, h3, h4, h5, h6, div, ul, li {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+li {
     padding: 0;
-    margin:  0;
+    margin: 0;
 }
 
 body {
@@ -8,53 +17,59 @@ body {
     font-family: Verdana, Geneva, sans-serif;
 }
 
-#divWrapper{
-    width: 700px;
+#Wrapper {
+    width: 800px;
     margin: 20px auto;
 }
 
-#divHeader{
-    width: 700px;
-    background-image: url(images/header-bg.jpg); 
+#Header {
     text-align: center;
+    color: #000;
+    background-color: grey;
+    padding: 10px;
+    background-color: #febc3c;
+    
+    
+      /*border radius*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #000;
 }
 
-#divHeader img{
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+#Links {
+    background-color: #000;
+    border: 2px solid #febc3c;
+    margin: 20px;
+    padding: 10px;
+    
+      /*border radius*/
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
-#divLine{
-    width: 700px;
-    background-color: #999;
-    height: 1px;
-}
-
-#divLinks{
-    width: 700px;
-    background-color: #666; 
-}
-
-#divNav{
+#Nav {
     width: 384px;
-    background-color: #666;
-    height: 36px;
-    margin: 0 auto; 
+    background-color: #000;
+    height: 50px;
+    margin: 0 auto;
 }
 
-#divNav ul{
+#Nav ul {
     list-style-type: none;
 }
 
-#divNav ul li{
+#Nav ul li {
     float: left;
 }
 
-#divNav ul li a{
+#Nav ul li a {
     text-decoration: none;
     display: block;
-    height: 20px;
-    line-height: 20px; 
+    height: 30px;
+    line-height: 30px;
     background-color: #000;
     font-size: 0.8em;
     font-weight: bold;
@@ -62,91 +77,91 @@ body {
     color: white;
     text-align: center;
     margin: 7px;
-    
+
     /*border radius*/
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border: 1px solid #000;
-    
+
     /*GRADIENTS*/
     background: -moz-linear-gradient(top, #666, #333);
     background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
 }
 
-#divNav ul li a:hover {
+#Nav ul li a:hover {
+    color: #febc3c;
     background-color: #333;
     background: -moz-linear-gradient(top, #000, #666);
     background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#666));
 }
 
-#divNav ul li a.current, #divNav ul li a.current:hover{
-    background-color: #333;
-      background: -moz-linear-gradient(top, #000, #666);
-    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#666));
-    color: #f68;
-    cursor: defaut;  
-}
 
-#divAbout {
-    width: 700px;
+#About {
     background-color: #333;
     padding: 60px 0 60px 0;
-}
- 
-#divContent {
-    width: 430px;
-    margin: 0 auto;
-    background-color: #222;
-    border: 1px solid #000;
     
     /*GRADIENTS*/
-    background: -moz-linear-gradient(top, #666, #333, #222);
-    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#222), color-stop(0.5, #333)); 
-    
-     /*border radius*/
+    background: -moz-linear-gradient(top, #666, #333);
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#febc3c));
+}
+
+#Content {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #000;
+    border: 1px solid #ffae13;
+    padding: 50px;
+
+
+    /*border radius*/
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 1 5px;
-    
+
     /*Shadows*/
     box-shadow: 1px 1px 4px #000;
-    -moz-box-shadow: 1px 1px 4px #000; 
-    -webkit-box-shadow: 1px 1px 4px #000; 
+    -moz-box-shadow: 1px 1px 4px #000;
+    -webkit-box-shadow: 1px 1px 4px #000;
 }
 
-#divContent img {
+#Content img {
     float: left;
-    border: 1px solid #000; 
+    border: 1px solid #000;
     background-color: #333;
     padding: 16px;
-    margin: 0.7em; 
-    
+    margin: 0.7em;
+
     /*GRADIENTS*/
     background: -moz-linear-gradient(top, #000, #333);
-    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#333)); 
-    
-     /*border radius*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#333));
+
+    /*border radius*/
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 1 5px;
 }
 
-#divContent h5 {
+#Content h2 {
     color: #FFF;
     padding: 0.8em 0 0 0;
 }
 
-#divContent p {
-    font-size: 0.7em;
+#Content p {
+    font-size: 1em;
     color: #999;
-    padding: 0.7em;
+    padding: 1em;;
+    letter-spacing: 0.6px;
     line-height: 1.4em;
+    
 }
 
-#divFooter {
-    background-color: #222;
-    height: 10px;
-    width: 700px;
+#Footer {
+    background-color: #000;
+    height: 20px;
     border-bottom: 1px solid #333;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    padding-top: 7px;
 }
