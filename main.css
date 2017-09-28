@@ -13,14 +13,14 @@ li {
 }
 
 body {
+    width: 800px;
     background-color: #000;
     font-family: Verdana, Geneva, sans-serif;
+    margin: auto;
 }
 
 #Wrapper {
-    width: 800px;
     margin: 20px auto;
-    
 }
 
 #Header {
