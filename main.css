@@ -46,17 +46,12 @@ body {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    
-}
-
-#Nav {
-    width: 384px;
-    background-color: #000;
-    height: 50px;
-    margin: 0 auto;
 }
 
 #Nav ul {
+    width: 384px;
+    height: 50px;
+    margin: 0 auto;
     list-style-type: none;
 }
 
